@@ -17,7 +17,7 @@
 # Output:
 #  Print time and voltage at a set time of a capacitor based power system
 #
-# Written by Isha Aurora
+# Written by Alwaleed Alrashidi 
 # Other contributors: None
 
 # import modules
