@@ -21,6 +21,7 @@
 # Other contributors: None
 
 # import modules
+
 import sys
 import math
 import csv
@@ -28,6 +29,7 @@ import csv
 
 
 #if else with args
+
 if len(sys.argv)==11:
   sa_m2 = float(sys.argv[1])
   eff = float(sys.argv[2])
@@ -76,11 +78,9 @@ if(node_discr<0.0):
    p_mode_w = 0.0
    node_discr = calc_node_discr(qt_c, c_f, i1_a, r_esr, p_mode_w)
 
-
 node_v = calc_node_voltage(node_discr, qt_c, c_f, i1_a, r_esr)
 if voc<=node_v and i1_a!=0.0:
    i1_a = 0.0
-
 
 if node_v<v_thresh:
    p_mode_w = 0.0
@@ -121,3 +121,5 @@ with open('./log.csv',mode='w',newline='') as outfile:
     csvwriter.writerow(['t_s','volts'])
     for e in log:
         csvwriter.writerow(e)
+
+# Output is on another file titled "Log.csv"
